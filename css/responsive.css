@@ -1,0 +1,184 @@
+/* ==========================================================================
+   AURA Atelier - Responsive Media Queries & Overrides
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Large Desktop Screens (Up to 1200px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+  .process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .process-timeline::before {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Tablets & Small Laptops (Up to 992px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 992px) {
+  :root {
+    --section-padding: 80px 4%;
+  }
+
+  /* Navigation */
+  .nav-menu, .nav-actions .btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Feature Split */
+  .feature-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .feature-image-wrapper img {
+    height: 400px;
+  }
+
+  .feature-image-badge {
+    bottom: 20px;
+    left: 20px;
+    padding: 16px 20px;
+  }
+
+  /* Projects Masonry */
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .project-card {
+    height: 360px;
+  }
+
+  /* Contact Section */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Floating Hero Badge */
+  .hero-floating-badge {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Tablets (Up to 768px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  :root {
+    --section-padding: 70px 4%;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    text-align: left;
+  }
+
+  .process-step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .step-number-node {
+    margin: 0;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.1rem;
+  }
+
+  .before-after-wrapper {
+    height: 400px;
+  }
+
+  .video-poster-wrapper {
+    height: 380px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Small Mobile Screens (Up to 480px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-btns .btn {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 2.8rem;
+  }
+
+  .testimonial-card {
+    padding: 30px 16px;
+  }
+
+  .testimonial-text {
+    font-size: 1.05rem;
+  }
+
+  .whatsapp-float {
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}

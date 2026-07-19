@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>AURA Atelier | Luxury Interior Design & Architectural Studio</title>
+  <meta name="description" content="Award-winning luxury interior design studio offering bespoke home interiors, modular kitchens, bedroom designs, commercial spaces, and full renovations.">
+  <meta name="keywords" content="Luxury Interior Design, Modular Kitchen, Home Renovation, Bedroom Interior, Office Design, Architecture, Studio Lotus, Livspace Luxury">
+  <meta name="author" content="AURA Atelier">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AURA Atelier - Transforming Spaces Into Timeless Experiences">
+  <meta property="og:description" content="Crafting bespoke, ultra-luxury residential and commercial interior architecture.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Sticky Header & Navigation Bar
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="logo" id="brandLogo">
+        <div class="logo-icon">A</div>
+        <div class="logo-text">
+          <span class="logo-title">AURA</span>
+          <span class="logo-sub">ATELIER INTERIORS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#before-after" class="nav-link">Gallery</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="nav-actions">
+        <button class="btn btn-gold trigger-consultation" id="navConsultBtn">
+          Book Consultation
+        </button>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#before-after" class="nav-link">Gallery</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <button class="btn btn-gold trigger-consultation" style="margin-top: 15px;">Book Consultation</button>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         2. Hero Section
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <!-- Background Video Stream with Gradient Fallback -->
+      <video class="hero-video-bg" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-an-open-living-room-41549-large.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="sub-title-pill reveal-down">
+          <svg viewBox="0 0 24 24"><path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"/></svg>
+          Ultra Luxury Interior Architecture
+        </div>
+        <h1 class="hero-title reveal-up delay-100">
+          Transforming Spaces Into <span class="text-gradient">Timeless Experiences</span>
+        </h1>
+        <p class="hero-subtitle reveal-up delay-200">
+          We harmonize architectural elegance, bespoke craftsmanship, and sensory aesthetics to construct extraordinary private residences, modular living, and commercial landmarks.
+        </p>
+        <div class="hero-btns reveal-up delay-300">
+          <a href="#projects" class="btn btn-gold">Explore Projects</a>
+          <button class="btn btn-outline trigger-consultation">Book Consultation</button>
+        </div>
+      </div>
+
+      <!-- Mouse Scroll Indicator -->
+      <a href="#about" class="scroll-indicator">
+        <div class="mouse-icon">
+          <div class="mouse-dot"></div>
+        </div>
+        <span>Scroll</span>
+      </a>
+
+      <!-- Floating Stat Badge -->
+      <div class="hero-floating-badge floating">
+        <div class="badge-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        </div>
+        <div class="badge-text">
+          <strong>10+ Years</strong>
+          <span>Uncompromising Luxury</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. Why Choose Us & Animated Counters
+         ========================================================================== -->
+    <section class="why-us section-padding" id="about">
+      <div class="container">
+        
+        <!-- Animated Stat Counters -->
+        <div class="stats-grid">
+          <div class="stat-card reveal-up">
+            <span class="stat-number" data-target="500" data-suffix="+">0</span>
+            <span class="stat-label">Luxury Projects Completed</span>
+          </div>
+          <div class="stat-card reveal-up delay-100">
+            <span class="stat-number" data-target="250" data-suffix="+">0</span>
+            <span class="stat-label">Happy Elite Clients</span>
+          </div>
+          <div class="stat-card reveal-up delay-200">
+            <span class="stat-number" data-target="10" data-suffix="+">0</span>
+            <span class="stat-label">Years of Excellence</span>
+          </div>
+          <div class="stat-card reveal-up delay-300">
+            <span class="stat-number" data-target="98" data-suffix="%">0</span>
+            <span class="stat-label">Client Satisfaction Rate</span>
+          </div>
+        </div>
+
+        <!-- Feature Split Presentation -->
+        <div class="feature-split">
+          <div class="feature-image-wrapper reveal-left">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" alt="Bespoke Luxury Living Interior">
+            <div class="feature-image-badge">
+              <span class="text-gold" style="font-size: 1.8rem; font-weight: 700; font-family: var(--font-heading);">100%</span>
+              <p style="font-size: 0.85rem; color: var(--color-text-primary); margin-top: 4px;">Custom Architectural Craftsmanship</p>
+            </div>
+          </div>
+
+          <div class="feature-content reveal-right">
+            <div class="sub-title-pill">Why Choose AURA</div>
+            <h2 class="section-title">Where Visionary Design Meets Bespoke Perfection</h2>
+            <p class="section-description">
+              At AURA Atelier, interior design is not merely decoration—it is spatial storytelling. We combine Italian minimalism, natural marbles, warm ambient illumination, and smart ergonomics.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                </div>
+                <div>
+                  <h3 class="feature-item-title">Bespoke 3D VR Renderings</h3>
+                  <p class="feature-item-desc">Experience photorealistic 8K virtual walk-throughs of your dream space prior to execution.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                </div>
+                <div>
+                  <h3 class="feature-item-title">Turnkey Turnaround & Warranty</h3>
+                  <p class="feature-item-desc">Fixed timelines with 10-year structural warranty and white-glove material sourcing from European ateliers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. Services Showcase (13 Bespoke Services)
+         ========================================================================== -->
+    <section class="services section-padding" id="services">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <div class="sub-title-pill">Our Expertise</div>
+          <h2 class="section-title">Comprehensive Interior & Architecture Services</h2>
+          <p class="section-description">
+            Tailored interior architectural solutions designed for luxury villas, penthouse suites, modern apartments, and premium commercial venues.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1: Home Interior -->
+          <div class="service-card reveal-up">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Home Interior">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Complete Home Interior</h3>
+              <p class="service-desc">End-to-end luxury residential transformations customized to match your lifestyle and aesthetic tastes.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2: Modular Kitchen -->
+          <div class="service-card reveal-up delay-100">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Modular Kitchen">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Modular Kitchen</h3>
+              <p class="service-desc">German-engineered soft-close hardware, quartz countertops, ergonomic kitchen islands, and smart storage.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3: Bedroom Design -->
+          <div class="service-card reveal-up delay-200">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=600&q=80" alt="Bedroom Design">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Master Bedroom Design</h3>
+              <p class="service-desc">Serene sanctuary bedrooms with acoustic wall padding, hidden lighting, custom headboards, and plush textures.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 4: Living Room Design -->
+          <div class="service-card reveal-up">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="Living Room Design">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Living Room Design</h3>
+              <p class="service-desc">Grand double-height living spaces with Italian sofas, marble accent walls, and custom art installations.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 5: Office Interior -->
+          <div class="service-card reveal-up delay-100">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Office Interior">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Executive Office Interior</h3>
+              <p class="service-desc">Sophisticated corporate headquarters and home executive suites built for productivity and distinction.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 6: Restaurant Interior -->
+          <div class="service-card reveal-up delay-200">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant Interior">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.55 3.89 3.57 4.22V22h2.86v-8.78C11.45 12.89 13 11.12 13 9V2h-2v7zm5-3v6h2.5v10h2.5V2h-5c0 2.21 1.79 4 4 4z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Restaurant & Lounge</h3>
+              <p class="service-desc">Atmospheric fine-dining dining spaces with bespoke bar counters, mood lighting, and acoustic mastery.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 7: False Ceiling -->
+          <div class="service-card reveal-up">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="False Ceiling">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h14v-8h3L12 3zm0 13c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Architectural False Ceiling</h3>
+              <p class="service-desc">Floating ceiling layouts, magnetic track lights, indirect cove LED channels, and wooden rafter accents.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 8: Wardrobe Design -->
+          <div class="service-card reveal-up delay-100">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=600&q=80" alt="Wardrobe Design">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 2v20h16V2H4zm8 10H6V4h6v8zm6 0h-4V4h4v8z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Bespoke Walk-in Wardrobe</h3>
+              <p class="service-desc">Glass-door walk-in closets with built-in sensors, leather-wrapped drawers, and watch winders.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 9: TV Unit & Entertainment Wall -->
+          <div class="service-card reveal-up delay-200">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?auto=format&fit=crop&w=600&q=80" alt="TV Unit Design">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Luxury TV & Media Walls</h3>
+              <p class="service-desc">Sintered stone backdrop media consoles, floating cabinets, concealed wiring, and integrated fireplace slots.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 10: Lighting Design -->
+          <div class="service-card reveal-up">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80" alt="Lighting Design">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Architectural Lighting</h3>
+              <p class="service-desc">Layered illumination schemes, smart home automated scenes, crystal chandeliers, and accent spotlights.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 11: Furniture Design -->
+          <div class="service-card reveal-up delay-100">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=600&q=80" alt="Furniture Design">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Custom Furniture Atelier</h3>
+              <p class="service-desc">Handcrafted dining tables, bespoke armchairs, brass-inlaid consoles, and limited edition signature pieces.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 12: Space Planning -->
+          <div class="service-card reveal-up delay-200">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Space Planning">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Architectural Space Planning</h3>
+              <p class="service-desc">Optimizing circulation flow, natural light orientation, structural layout modifications, and Vastu compliance.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 13: Full Villa Renovation -->
+          <div class="service-card reveal-up">
+            <div class="service-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80" alt="Renovation">
+              <div class="service-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.6C.4 7 1 10 3 12c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.5z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Complete Property Renovation</h3>
+              <p class="service-desc">Complete structural overhaul, mechanical & electrical upgrades, exterior facade redesign, and modern luxury retrofit.</p>
+              <a href="#contact" class="service-link trigger-consultation">
+                <span>Explore Service</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. Featured Projects & Filterable Portfolio Grid
+         ========================================================================== -->
+    <section class="projects section-padding" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <div class="sub-title-pill">Portfolio</div>
+          <h2 class="section-title">Featured Luxury Projects</h2>
+          <p class="section-description">
+            Explore our curated portfolio of award-winning penthouses, modern minimalist villas, and signature commercial spaces.
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="filter-tabs reveal-up delay-100">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="residential">Residential</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+          <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="projects-grid">
+          
+          <div class="project-card reveal-up" data-category="residential">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Grand Penthouse Villa">
+            <div class="project-overlay">
+              <span class="project-category">Residential</span>
+              <h3 class="project-title">The Glass Skyline Penthouse</h3>
+              <span class="project-location">5,400 sq.ft • Downtown Beverly</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal-up delay-100" data-category="kitchen">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Minimalist Italian Kitchen">
+            <div class="project-overlay">
+              <span class="project-category">Kitchen</span>
+              <h3 class="project-title">Nero Marquina Culinary Studio</h3>
+              <span class="project-location">Italian Quartz & Brushed Brass</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal-up delay-200" data-category="bedroom">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Master Suite Sanctuary">
+            <div class="project-overlay">
+              <span class="project-category">Bedroom</span>
+              <h3 class="project-title">Celestial Master Bedroom</h3>
+              <span class="project-location">Oak Slat Panel & Ambient Cove</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal-up" data-category="commercial">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Executive Corporate Office">
+            <div class="project-overlay">
+              <span class="project-category">Commercial</span>
+              <h3 class="project-title">Vanguard Capital Headquarters</h3>
+              <span class="project-location">12,000 sq.ft • Financial District</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal-up delay-100" data-category="residential">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Minimalist Zen Villa">
+            <div class="project-overlay">
+              <span class="project-category">Residential</span>
+              <h3 class="project-title">Serenity Minimalist Estate</h3>
+              <span class="project-location">Indoor Courtyard & Water Wall</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal-up delay-200" data-category="commercial">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Fine Dining Restaurant">
+            <div class="project-overlay">
+              <span class="project-category">Commercial</span>
+              <h3 class="project-title">L'Étoile Fine Dining Lounge</h3>
+              <span class="project-location">Velvet Seating & Brass Accents</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. Interactive Before & After Image Comparison Slider
+         ========================================================================== -->
+    <section class="before-after section-padding" id="before-after">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <div class="sub-title-pill">Transformation</div>
+          <h2 class="section-title">Before & After Interior Comparison</h2>
+          <p class="section-description">
+            Drag the golden slider to witness raw architectural space transformed into a masterpiece of luxury and comfort.
+          </p>
+        </div>
+
+        <div class="before-after-wrapper reveal-scale">
+          <!-- After Image (Background) -->
+          <div class="ba-image-container ba-after">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="After Transformation">
+            <span class="ba-label ba-label-after">After Transformation</span>
+          </div>
+
+          <!-- Before Image (Overlay clipped width) -->
+          <div class="ba-image-container ba-before">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" alt="Before Raw Space">
+            <span class="ba-label ba-label-before">Before Construction</span>
+          </div>
+
+          <!-- Drag Handle -->
+          <div class="ba-handle">
+            <div class="ba-handle-button">
+              <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. Design & Execution Process Timeline
+         ========================================================================== -->
+    <section class="process section-padding" id="process">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <div class="sub-title-pill">Our Method</div>
+          <h2 class="section-title">The 5-Step Atelier Design Process</h2>
+          <p class="section-description">
+            A seamless journey from initial consultation to hand-over, executed with surgical precision and transparent updates.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          
+          <div class="process-step reveal-up">
+            <div class="step-number-node">01</div>
+            <h3 class="step-title">Consultation</h3>
+            <p class="step-desc">In-depth lifestyle briefing, budget alignment, and spatial vision assessment.</p>
+          </div>
+
+          <div class="process-step reveal-up delay-100">
+            <div class="step-number-node">02</div>
+            <h3 class="step-title">Planning</h3>
+            <p class="step-desc">Structural blueprints, 2D floor plans, and material moodboard selection.</p>
+          </div>
+
+          <div class="process-step reveal-up delay-200">
+            <div class="step-number-node">03</div>
+            <h3 class="step-title">3D VR Design</h3>
+            <p class="step-desc">Photorealistic 3D rendering and virtual reality walkthrough approval.</p>
+          </div>
+
+          <div class="process-step reveal-up delay-300">
+            <div class="step-number-node">04</div>
+            <h3 class="step-title">Execution</h3>
+            <p class="step-desc">Precision fabrication, European material imports, and site management.</p>
+          </div>
+
+          <div class="process-step reveal-up delay-400">
+            <div class="step-number-node">05</div>
+            <h3 class="step-title">Handover</h3>
+            <p class="step-desc">White-glove styling, final quality audit, and 10-year warranty release.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. Video Showcase Section
+         ========================================================================== -->
+    <section class="video-showcase section-padding">
+      <div class="container">
+        <div class="video-showcase-container reveal-scale">
+          <div class="video-poster-wrapper">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Video Showcase Poster">
+            <div class="video-overlay-tint">
+              <button class="play-trigger-btn pulse-gold" id="playVideoBtn" aria-label="Play Project Tour Video">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+              <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: #fff;">Watch Our Atelier Film</h3>
+              <p style="color: var(--color-gold); font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase;">Cinematic Walkthrough (2:45)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. Client Testimonials Slider
+         ========================================================================== -->
+    <section class="testimonials section-padding" id="testimonials">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <div class="sub-title-pill">Testimonials</div>
+          <h2 class="section-title">What Our Elite Clients Say</h2>
+          <p class="section-description">
+            Read authentic reviews from homeowners, hotel owners, and business leaders who trusted us with their spaces.
+          </p>
+        </div>
+
+        <div class="testimonials-slider reveal-up delay-100">
+          <div class="testimonial-track">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="glass-card testimonial-card">
+                <svg class="quote-icon" viewBox="0 0 24 24"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+                <p class="testimonial-text">
+                  "AURA Atelier turned our penthouse into a serene architectural sanctuary. Their attention to lighting detail and custom marble craftsmanship exceeded even our highest expectations."
+                </p>
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="client-info">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Eleanor Vance" class="client-avatar">
+                  <div>
+                    <div class="client-name">Eleanor Vance</div>
+                    <div class="client-role">Penthouse Owner, Beverly Hills</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="glass-card testimonial-card">
+                <svg class="quote-icon" viewBox="0 0 24 24"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+                <p class="testimonial-text">
+                  "The modular kitchen and walk-in wardrobe engineering are simply flawless. Every drawer closes with whisper-quiet precision. Outstanding project timeline management!"
+                </p>
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="client-info">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Marcus Sterling" class="client-avatar">
+                  <div>
+                    <div class="client-name">Marcus Sterling</div>
+                    <div class="client-role">Founder, Sterling Capital</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="glass-card testimonial-card">
+                <svg class="quote-icon" viewBox="0 0 24 24"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+                <p class="testimonial-text">
+                  "Designing our luxury boutique restaurant required balancing high acoustics, mood lighting, and durability. AURA delivered a masterpiece that our guests rave about daily."
+                </p>
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="client-info">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Sophia Chen" class="client-avatar">
+                  <div>
+                    <div class="client-name">Sophia Chen</div>
+                    <div class="client-role">Restateur & Hotelier</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Arrow Controls -->
+          <div class="slider-controls">
+            <button class="slider-arrow" id="testimonialPrev" aria-label="Previous Testimonial">❮</button>
+            <button class="slider-arrow" id="testimonialNext" aria-label="Next Testimonial">❯</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. FAQ Accordion
+         ========================================================================== -->
+    <section class="faq section-padding" id="faq">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <div class="sub-title-pill">Inquiries</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">
+            Everything you need to know about our interior design consultation, timelines, material sourcing, and pricing.
+          </p>
+        </div>
+
+        <div class="faq-wrapper reveal-up delay-100">
+          
+          <div class="faq-item active">
+            <div class="faq-header">
+              <span class="faq-question">What is the typical timeline for a complete villa interior project?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-body">
+              <p class="faq-answer">
+                Our standard luxury villa project ranges between 60 to 90 days from design sign-off to white-glove handover. Modular kitchens and single rooms can be executed within 30 to 45 days.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">Do you offer photorealistic 3D VR walkthroughs before starting work?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-body">
+              <p class="faq-answer">
+                Yes! Every project includes complete 3D photorealistic renderings and VR spatial walkthroughs so you can visualize textures, lighting, and layout before construction begins.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">Where are your materials and furniture components sourced from?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-body">
+              <p class="faq-answer">
+                We partner with premier Italian, German, and domestic ateliers for marbles, soft-close hardware, custom veneers, and luxury acoustic wall panels.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">What structural warranty and post-handover support do you provide?</span>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-body">
+              <p class="faq-answer">
+                We provide a comprehensive 10-year structural warranty on all built-in furniture and woodwork, accompanied by annual complimentary maintenance checkups.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. Contact & Booking Section
+         ========================================================================== -->
+    <section class="contact section-padding" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <div class="sub-title-pill">Get In Touch</div>
+          <h2 class="section-title">Begin Your Luxury Journey</h2>
+          <p class="section-description">
+            Schedule a private consultation at our atelier studio or request an initial spatial evaluation by our senior interior architects.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info & Map -->
+          <div class="contact-info reveal-left">
+            <div class="contact-info-cards">
+              
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </div>
+                <div>
+                  <h4 class="info-title">Atelier Headquarters</h4>
+                  <p class="info-text">740 Park Avenue, Design District, Suite 1200</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                </div>
+                <div>
+                  <h4 class="info-title">Direct Telephone</h4>
+                  <p class="info-text">+1 (800) 789-AURA / +1 (212) 555-0199</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div>
+                  <h4 class="info-title">Electronic Mail</h4>
+                  <p class="info-text">concierge@aura-atelier.com</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Styled Map Container -->
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215570845344!2d-73.96828568459369!3d40.77443897932463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0x26162ecf701c385c!2sPark%20Ave%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1625000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-card reveal-right" style="padding: 40px;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 24px; color: var(--color-text-primary);">Request Private Consultation</h3>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Full Name *" required>
+              </div>
+
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Address *" required>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Phone Number *" required>
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" style="color: #b3b3b3;" required>
+                  <option value="" disabled selected>Select Primary Service Required</option>
+                  <option value="home">Complete Home Interior</option>
+                  <option value="kitchen">Modular Kitchen</option>
+                  <option value="bedroom">Master Bedroom Design</option>
+                  <option value="office">Executive Office Interior</option>
+                  <option value="renovation">Villa Renovation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Tell us about your project scope & estimated budget..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width: 100%;">
+                Submit Consultation Request
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       12. Luxury Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon">A</div>
+            <div class="logo-text">
+              <span class="logo-title">AURA</span>
+              <span class="logo-sub">ATELIER INTERIORS</span>
+            </div>
+          </a>
+          <p>
+            An award-winning ultra-luxury interior architecture studio dedicated to sculpting timeless living spaces across the globe.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Atelier</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#testimonials">Client Reviews</a>
+          </div>
+        </div>
+
+        <!-- Services Links -->
+        <div>
+          <h4 class="footer-title">Expertise</h4>
+          <div class="footer-links">
+            <a href="#services">Home Interior</a>
+            <a href="#services">Modular Kitchen</a>
+            <a href="#services">Master Bedroom</a>
+            <a href="#services">Executive Office</a>
+            <a href="#services">Property Renovation</a>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div>
+          <h4 class="footer-title">Atelier Journal</h4>
+          <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 12px;">
+            Subscribe to receive private invitations to architectural showcases & trend reports.
+          </p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-gold" style="padding: 12px 20px;">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 AURA Architectural & Interior Atelier. All Rights Reserved.</p>
+        <p>Crafted with pure HTML5, CSS3, & Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       13. Floating Action Triggers & Toast Notifications
+       ========================================================================== -->
+  <!-- WhatsApp Quick Chat Floating Button -->
+  <a href="https://wa.me/12125550199?text=Hello%20AURA%20Atelier,%20I%20would%20like%20to%20inquire%20about%20interior%20design%20services." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.299.428 2.502 1.156 3.472l-.759 2.766 2.846-.747c.934.58 2.037.915 3.22.916 3.181 0 5.767-2.586 5.767-5.766 0-3.18-2.586-5.767-5.766-5.767zm3.39 8.139c-.145.409-.838.784-1.158.835-.32.051-.734.092-2.148-.492-1.815-.75-2.985-2.597-3.076-2.718-.09-.12-.734-.978-.734-1.866 0-.888.465-1.325.63-1.505.165-.18.36-.225.48-.225.12 0 .24.001.345.006.114.005.27-.043.42.316.15.36.51 1.246.555 1.336.045.09.075.195.015.315-.06.12-.09.195-.18.3-.09.105-.189.234-.27.315-.09.09-.184.188-.079.368.105.18.468.773 1.005 1.25.689.613 1.27.803 1.45.893.18.09.285.075.39-.045.105-.12.45-.525.57-.705.12-.18.24-.15.405-.09.165.06 1.05.495 1.23.585.18.09.3.135.345.21.045.075.045.435-.1.844z"/></svg>
+  </a>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <!-- Interactive Toast Notification Alert -->
+  <div class="toast" id="toastNotification">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--color-gold)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+    <span id="toastMessage">Thank you! Your request has been received.</span>
+  </div>
+
+  <!-- ==========================================================================
+       14. Modals (Video Tour, Consultation Form, Lightbox)
+       ========================================================================== -->
+  <!-- Video Tour Modal -->
+  <div class="modal" id="videoModal">
+    <div class="modal-content" style="max-width: 960px; padding: 0; background: #000; overflow: hidden;">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <video id="modalVideoPlayer" controls style="width: 100%; max-height: 80vh;">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-an-open-living-room-41549-large.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- Lightbox Image Preview Modal -->
+  <div class="modal" id="lightboxModal">
+    <div class="modal-content" style="max-width: 900px; padding: 20px; text-align: center;">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <img id="lightboxImg" src="" alt="Project Lightbox Preview" style="width: 100%; max-height: 70vh; object-fit: contain; border-radius: var(--radius-sm); margin-bottom: 16px;">
+      <h3 id="lightboxTitle" style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-text-primary);"></h3>
+      <p id="lightboxCategory" style="color: var(--color-gold); font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px;"></p>
+    </div>
+  </div>
+
+  <!-- Book Consultation Modal -->
+  <div class="modal" id="consultationModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="sub-title-pill">Private Appointment</div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-text-primary);">Book Studio Consultation</h3>
+        <p style="color: var(--color-text-secondary); font-size: 0.9rem; margin-top: 6px;">Reserve a 1-on-1 session with our Principal Interior Architect.</p>
+      </div>
+
+      <form id="consultationForm" class="contact-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Full Name *" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email Address *" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-control" placeholder="Phone Number *" required>
+        </div>
+        <div class="form-group">
+          <select class="form-control" style="color: #b3b3b3;" required>
+            <option value="" disabled selected>Select Property Type</option>
+            <option value="villa">Luxury Villa / Estate</option>
+            <option value="penthouse">Penthouse Suite</option>
+            <option value="apartment">Modern Apartment</option>
+            <option value="commercial">Commercial / Office</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width: 100%;">Confirm Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
