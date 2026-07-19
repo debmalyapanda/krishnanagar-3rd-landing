@@ -191,13 +191,39 @@ function initTestimonialSlider() {
     });
   }
 
+  // Touch Swipe Support for Mobile Devices
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  track.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+
+  const handleSwipe = () => {
+    const swipeThreshold = 40;
+    if (touchEndX < touchStartX - swipeThreshold) {
+      // Swiped left -> Next slide
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlide();
+    } else if (touchEndX > touchStartX + swipeThreshold) {
+      // Swiped right -> Previous slide
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    }
+  };
+
   // Auto rotate slider every 6 seconds
   let autoSlide = setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     updateSlide();
   }, 6000);
 
-  // Pause auto rotate on hover
+  // Pause auto rotate on hover/touch
   const container = document.querySelector('.testimonials-slider');
   if (container) {
     container.addEventListener('mouseenter', () => clearInterval(autoSlide));
